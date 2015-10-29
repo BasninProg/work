@@ -1,0 +1,10 @@
+body {
+	font: 100%/1.5em Arial,Helvetica,sans-serif;
+	color: #000;
+	background: linear-gradient(65deg, #ccc, #666);
+
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
