@@ -12,8 +12,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 #scroll .logo-description,
 #header-back .logo-description {
 	font-size: 15px;
-	font-weight: 600;
-	color: green;	
+	font-weight: 600;	
 }
 
 #header-back, #navigation, #feature, #footer-main, #scroll {		
@@ -361,39 +360,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* INDEX.HTML BTN - navigation */
 /* INDEX.HTML SECTION */
 
-.logotype-intro {
-	width: 106px;
-	height: auto;
-	margin-right: 10px;
-	vertical-align: middle;	
-	transition: 0.5s;
-    padding: 10px 0 10px 0;
-}
-
-.logotype-intro2 {
-	width: 200px;
-	height: auto;
-	margin-right: 10px;
-	vertical-align: middle;	
-	transition: 0.5s;
-}
-
 .title-dev-img {
-	width: 240px;
-	height: 240px;
+	width: 90px;
+	height: 90px;
 	float: left;
-	margin: 0 30px 30px 15px;	
+	margin: 0 30px 15px 15px;
 }
 
 .title-dev-text {
 	text-align: center;
-	margin-top: 80px;	
+	margin-top: 20px;
 	text-shadow: 0 1px 0 #ccc;	
 }
 
 .bor-left {	
 	text-align: center;
-	margin-top: 240px;
+	margin-top: 0;
 	padding: 0 10px 0 42px;
 }
 
@@ -401,15 +383,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 	text-align: center;
 }
 
-.introtext {
-	padding-bottom: 5px;
-}
-
-.intro-logo {
-	margin-bottom: 8px;
-}
-
-#header-back {		
+#header-back {
 	padding: 72px 0 177px;
 	position: relative;
 	margin-bottom: 101px;	
@@ -444,13 +418,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 #application-form {    
     background: #fff;
     color: #2969b0;
-    width: 531px;    
+    width: 331px;
     padding: 22px 30px 15px;    
     text-align: left;
     box-sizing: border-box;
     border-radius: 0 0 0 3px;
     top: 0;
-    left: 40px;    
+    left: 40px;
+	margin-left: 100px;
+}
+
+.user-login,
+.user-phone{
+	font-size: 15px;
+	margin-top: 5px;
+}
+
+.to-order:hover {
+	color: #fff;
+	background-color: #2969b0;
 }
 
 /* INDEX.HTML SECTION */
@@ -579,7 +565,7 @@ p {
 }
 
 a {
-	transition: all 0.5s ease;
+	transition: all 0.2s ease;
 	text-decoration: none;
 }
 
@@ -735,7 +721,7 @@ li i[class*=skype] {
 }
 
 .social-links a:hover {
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 #showcase .container .row {
@@ -748,8 +734,18 @@ li i[class*=skype] {
     margin: 0px;
     overflow: hidden;	
 }
+
+figcaption h3 {
+	color: #000000;
+}
 /* INDEX.HTML EMPLOYEES */
 /* INDEX.HTML OTZIVI */
+
+.fa-chevron-right,
+.fa-chevron-left {
+	margin-top: 40px;
+	padding-top: 60px;
+}
 
 .carousel-control.left {  
     background-image: none !important;
@@ -937,8 +933,8 @@ li i[class*=skype] {
 }
 
 .fidez-sprite {  	  	
-    width: 220px;
-    height: 75px;
+    width: 160px;
+    height: 55px;
 }
 
 /* INDEX.HTML FOOTER */
@@ -995,9 +991,5 @@ aside#fixed-sidebar-right .moduletable.login > i.fa-user:hover {
 
 .fa-user:before {
     content: "\f007";
-}
-
-.title-sidebar {
-	margin-bottom: 25px;
 }
 /* INDEX.HTML ASIDE*/
