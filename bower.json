@@ -2,6 +2,11 @@
   "name": "fidez",
   "dependencies": {
     "jquery": "~2.1.4",
-    "bootstrap": "~3.3.5"
+    "bootstrap": "~3.3.5",
+    "font-awesome": "fontawesome#~4.4.0",
+    "jquery-animateNumber": "~0.0.12",
+    "Headhesive.js": "headhesive#~1.2.4",
+    "css": "https://fonts.googleapis.com/css?family=Istok+Web",
+    "istokWeb": "https://google-fonts.azurewebsites.net/googleFonts/istokWeb?family=Istok+Web"
   }
 }

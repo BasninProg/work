@@ -18,13 +18,19 @@ gulp.task('connect', function() {
 
 //Работа с HTML
 gulp.task('html', function () {
-  gulp.src('./app/*.html')
+  gulp.src('./app/**/*.html')
     .pipe(connect.reload());
 });
 
 //Работа с JS
 gulp.task('js', function () {
-  gulp.src('./app/js/*.js')
+  gulp.src('./app/js/**/*.js')
+    .pipe(connect.reload());
+});
+
+//Работа с CSS
+gulp.task('css', function () {
+  gulp.src('./app/css/**/*.css')
     .pipe(connect.reload());
 });
 
@@ -44,10 +50,10 @@ gulp.task('concatCSS', function () {
 
 //Слежка
 gulp.task('watch', function () {
-  gulp.watch(['./app/*.html'], ['html']);
-  gulp.watch(['./app/css/*.css'], ['concatCSS']);
-  gulp.watch(['./app/js/*.js'], ['js']);
+  gulp.watch(['./app/**/*.html'], ['html']);
+  gulp.watch(['./app/css/**/*.css'], ['concatCSS']);
+  gulp.watch(['./app/js/**/*.js'], ['js']);  
 });
 
 //Задача по умолчанию
-gulp.task('default', ['connect', 'concatCSS', 'watch']);
+gulp.task('default', ['connect', 'watch']);

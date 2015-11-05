@@ -7,15 +7,451 @@
 	<meta name="description" content="">
     <meta name="author" content="Basnin">
 	<title>Создание сайтов Кривой Рог</title>
+	<link rel="stylesheet" type="text/css" href="bower/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main-style.min.css">
+	<link rel="stylesheet" type="text/css" href="bower/istokWeb/istokWeb.css">
+	<link rel="stylesheet" type="text/css" href="bower/font-awesome/css/font-awesome.min.css">
+	<script type="text/javascript" src="bower/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="bower/Headhesive.js/dist/headhesive.min.js"></script>
+	<script type="text/javascript" src="bower/jquery-animateNumber/jquery.animateNumber.min.js"></script>
+	<script type="text/javascript" src="bower/bootstrap/dist/js/bootstrap.min.js"></script>
+	<!--<script type="text/javascript" src="js/mask-phone.js"></script>-->
+	<script type="text/javascript" src="js/animateNumber.js"></script>
+	<script type="text/javascript" src="js/menu.js"></script>
+	<script type="text/javascript" src="js/scrollTo.js"></script>		
+	<script type="text/javascript" src="js/r-sidebar.js"></script>
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
   		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
   		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->	
 </head>
-<body>
-	<h1>Первое СЛОВО - sssss</h1>
-	
+<body>	
+	<nav>
+		<div id="scroll" class="scroll-content">                
+	        <div class="navbar navbar-default">
+	            <div class="container">
+	                <div class="navbar-header">
+	                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsive-menu">
+	                        <span class="sr-only">Открыть навигацию</span>
+	                        <span class="icon-bar"></span>
+	                        <span class="icon-bar"></span>
+	                        <span class="icon-bar"></span>
+	                    </button>
+	                    <img src="/image/logo1.png" class="logotype rotate" title="Лого фирмы Fidez" alt="logo1part">
+	                    <img src="/image/logo2.png" class="logotype2" title="Лого фирмы Fidez" alt="logo2part">
+	                </div>
+	                <div class="collapse navbar-collapse" id="responsive-menu">
+	                    <ul class="nav navbar-nav">
+	                        <li><a href="#">Главная</a></li>                        
+	                        <li><a href="/portfolio.php">Портфолио</a></li>
+	                        <li><a href="#">Контактыfff</a></li>                        
+	                    </ul>
+	                </div>	                
+	                <span class="logo-description">Разработка сайтов любой сложности <i class="fa fa-phone">(097) 481-01-27</i></span>
+	            </div>
+	        </div>                           		
+		</div> 
+	</nav>	
+	<div class="wrapper">	
+		<section id="header-back">		
+			<header class="header-main">
+				<div class="container">
+					<div class="row">
+						<figure class="intro-logo">
+						 	<img src="/image/logo1.png" class="logotype-intro" title="Лого фирмы Fidez" alt="logo1part">
+		                 	<img src="/image/logo2.png" class="logotype-intro2" title="Лого фирмы Fidez" alt="logo2part">
+							<figcaption class="introtext">
+								<h1>Создание сайтов в Кривом Роге.</h1>
+									<p class="logo-description">Студия дизайна FideZ.com – команда профессионалов знающих свое дело, понимающих суть работы и желания клиента.</p>
+							</figcaption>
+						</figure>
+					</div>
+				</div>		
+			</header>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 col-md-6 col-lg-6">
+						<div class="row">
+							<div class="title-dev-img">
+								<img src="image/old-clock.png" title="Опыт работы" alt="old-clock">
+							</div>
+							<div class="title-dev-text">
+								<h2><p>Нам <span id="old-year" class=""></span> лет</p></h2>		
+							</div>			
+						</div>
+						<div class="row">
+							<div class="title-dev-img">
+								<img src="image/complete.png" title="Успешно завершенные проекты" alt="project-Complete">
+							</div>
+							<div class="title-dev-text">
+								<h2><p>Более <span id="project"></span> успешно завершенных проектов</p></h2>		
+							</div>
+						</div>
+						<div class="row">
+							<div class="title-dev-img">
+								<img src="image/hand.png" title="Партнерские отношения" alt="uniq-dev">
+							</div>
+							<div class="title-dev-text">
+								<h2><p><span></span>Индивидуальная разработка</p></h2>		
+							</div>
+						</div>				
+					</div>
+					<div class="col-sm-6 col-md-6 col-lg-6 bor-left">
+						<h3>Оставить заявку на проект</h3>
+						<form action="" method="post" id="application-form" class="form-inline">
+							<div class="form-group">
+								<label for="form-username">Имя пользователя</label>
+								<input id="form-username" type="text" name="username" class="form-control" tabindex="0" size="25" placeholder="Введите в формате" required>
+							</div>
+							<div class="form-group">
+								<label id="descr" for="phone_mask">Телефон для контакта</label>
+								<input type="text" id="customer_phone" name="userphone" class="form-control" tabindex="0" size="25" value="7" required>
+							</div>
+							<div class="form-group">
+								<input type="checkbox" id="phone_mask" checked>
+								<label id="descr" for="phone_mask">Маска ввода</label>
+							</div><br>
+							<button type="submit" class="btn btn-default">Заказать</button>
+						</form>
+				</div>				
+			</div>
+			</div>
+			<div class="btn-next">
+				<a href="#article-n1" style="text-decoration: none;"><i class="fa fa-angle-double-down"></i></a>
+			</div>		
+		</section>
+	<!-- Content -->
+	<article id="article-n1">
+		<div class="container">
+			<div class="row row1">
+				<h2><span class="title">О нас</span></h2>
+				<p>Студия дизайна FideZ.com – это команда профессионалов знающих свое дело, понимающих суть работы и желания клиента. Наши специалисты – это дизайнеры широкого профиля, редакторы русского, украинского и английского языков, программисты, для которых, разрешима абсолютно любая задача, сотрудники обладающие неординарным и креативным мышлением, специалисты в области продвежения сайтов и поисковой оптимизации, патентные поверенные, ну и конечно руководящий персонал.</p>
+			</div>
+			<div class="spacer">&nbsp;</div>
+			<div class="clearfix"></div>
+		</div>		
+		<div class="container">
+			<div class="row row2">
+				<div class="col-md-4">
+					<figure class="item-img">
+						<img src="image/laptop.png">
+						<figcaption>
+							<h3><span>У вас</span></h3>
+							<p>Основным направлением студии дизайна является создание сайтов. Причем сайты мы</p>	
+						</figcaption>
+					</figure>				
+				</div>
+				<div class="col-md-4">
+					<figure class="item-img">
+						<img src="image/letter.png">
+						<figcaption>
+							<h3><span>От нас</span></h3>
+							<p>Студия занимается созданием всех сопутствующих сайту элементов: фирменный стиль</p>	
+						</figcaption>
+					</figure>
+				</div>
+				<div class="col-md-4">
+					<figure class="item-img">
+						<img src="image/like.png">
+						<figcaption>
+							<h3><span>У всех</span></h3>
+							<p>Еще студия специализируется на создании дизайна и изготовлении (производство) наружной рекламы.</p>	
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="clearfix"></div>
+		<div class="btn-next">
+            <a href="#navigation" style="text-decoration: none;"><i class="fa fa-angle-double-down"></i></a>           
+		</div>
+	</article>
+	<!-- Our work navigation-->
+	<article id="navigation">
+	<div class="container work">
+		<div class="row">
+			<h2><span class="title uniq">Наши Последние Работы</span></h2>
+			<div class="col-xs-6 col-sm-4">
+				<div class="thumbnail">
+					<a href="">
+						<img src="image/work1.jpg" title="Наша последняя работа" alt="latestWork1">
+					</a>
+				</div>				
+			</div>		
+			<div class="col-xs-6 col-sm-4">
+				<div class="thumbnail">
+					<a href="">
+						<img src="image/work2.jpg" title="Наша последняя работа" alt="latestWork2">
+					</a>
+				</div>				
+			</div>
+			<div class="col-xs-6 col-sm-4">
+				<div class="thumbnail">
+					<a href="">
+						<img src="image/work3.jpg" title="Наша последняя работа" alt="latestWork3">
+					</a>
+				</div>				
+			</div>
+			<div class="col-xs-6 col-sm-4">
+				<div class="thumbnail">
+					<a href="">
+						<img src="image/work4.jpeg" title="Наша последняя работа" alt="latestWork4">
+					</a>
+				</div>				
+			</div>
+			<div class="col-xs-6 col-sm-4">
+				<div class="thumbnail">
+					<a href="">
+						<img src="image/work5.jpg" title="Наша последняя работа" alt="latestWork5">
+					</a>
+				</div>				
+			</div>
+			<div class="col-xs-6 col-sm-4">
+				<div class="thumbnail">
+					<a href="">
+						<img src="image/work6.jpg" title="Наша последняя работа" alt="latestWork6">
+					</a>
+				</div>				
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<div class="work">
+		<a class="btn btn-info" href="">Посмотреть все работы</a>
+		</div>
+	</div>
+	<div class="btn-next">
+                <a href="#showcase" style="text-decoration: none;"><i class="fa fa-angle-double-down"></i></a>
+	</div>
+	</article>
+	<!--Our employees -->
+	<article id="showcase">
+		<div class="container">
+			<div class="row">
+			<h2><span class="title">Наша Команда</span></h2>
+				<div class="col-md-4">
+					<figure>
+						<img src="image/Brian.png" title="Сотрудник фирмы Fidez" alt="employee first">
+						<figcaption>
+							<h3>Кирилл Василенко</h3>
+							<p class="link-develop">Art Director</p>
+						</figcaption>
+					</figure>
+						<ul class="social-links">
+							<li>
+								<a href="#" class="hasTooltip" title data-origin-title="Facebook">
+									<i class="fa fa-facebook"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="hasTooltip" title data-origin-title="Twitter">
+									<i class="fa fa-twitter"></i>	
+							</li>
+							<li>
+								<a href="#" class="hasTooltip" title data-origin-title="Skype">
+									<i class="fa fa-skype"></i>	
+							</li>
+						</ul>
+				</div>
+				<div class="col-md-4">
+					<figure>
+						<img src="image/Ben.png" title="Сотрудник фирмы Fidez" alt="employee second">
+						<figcaption>
+							<h3>Сергей Кодер</h3>
+							<p class="link-develop">Hard Coder</p>
+						</figcaption>
+					</figure>
+						<ul class="social-links">
+							<li>
+								<a href="#" class="hasTooltip" title data-origin-title="Facebook">
+									<i class="fa fa-facebook"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="hasTooltip" title data-origin-title="Twitter">
+									<i class="fa fa-twitter"></i>	
+							</li>
+							<li>
+								<a href="#" class="hasTooltip" title data-origin-title="Skype">
+									<i class="fa fa-skype"></i>	
+							</li>
+						</ul>
+				</div>
+				<div class="col-md-4">
+					<figure>
+						<img src="image/ryan.png" title="Сотрудник фирмы Fidez" alt="employee third">
+						<figcaption>
+							<h3>Ярослав Кушнир</h3>
+							<p class="link-develop">Web-developer</p>
+						</figcaption>
+					</figure>
+						<ul class="social-links">
+							<li>
+								<a href="#" class="hasTooltip" title data-origin-title="Facebook">
+									<i class="fa fa-facebook"></i>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="hasTooltip" title data-origin-title="Twitter">
+									<i class="fa fa-twitter"></i>	
+							</li>
+							<li>
+								<a href="#" class="hasTooltip" title data-origin-title="Skype">
+									<i class="fa fa-skype"></i>	
+							</li>
+						</ul>
+				</div>
+			</div>			
+		</div>
+		<div class="btn-next">
+			<a href="#feature" style="text-decoration: none;"><i class="fa fa-angle-double-down"></i></a>
+		</div>
+	</article>
+	<!--Navigation panel otzivi-->
+	<article id="feature">
+		<div class="container">
+			<div class="row">
+				<h2><span class="title uniq">Отзывы клиентов</span></h2>
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				    <ol class="carousel-indicators">
+				    <li  data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				  </ol>
+		 		<!-- Wrapper for slides -->
+					<div class="carousel-inner">
+		                <div class="item active">
+		                    <div class="item-content">
+		                        <figure class="item-img">
+									<img src="image/client.png">
+								</figure>  
+		                        <h3><span class="title-otziv">Саша Баснин</span></h3>
+		                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis et, excepturi eaque odio fugit inventore ab. Odio repudiandae voluptatibus dolorum quos necessitatibus placeat ullam in sint. Nostrum, aperiam repudiandae voluptatem.</p>
+		                    </div>
+		                </div>
+		                <div class="item">
+		                    <div class="item-content">
+		                        <figure class="item-img">
+									<img src="image/client.png">
+								</figure>     
+		                        <h3><span class="title-otziv">Кирилл Василенко</span></h3>
+		                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis et, excepturi eaque odio fugit inventore ab. Odio repudiandae voluptatibus dolorum quos necessitatibus placeat ullam in sint. Nostrum, aperiam repudiandae voluptatem.</p>
+		                    </div>
+		                </div>
+		                <div class="item">
+		                    <div class="item-content">
+		                        <figure class="item-img">
+									<img src="image/client.png">
+								</figure>      
+		                        <h3><span class="title-otziv">Антон Кукушкин</span></h3>
+		                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis et, excepturi eaque odio fugit inventore ab. Odio repudiandae voluptatibus dolorum quos necessitatibus placeat ullam in sint. Nostrum, aperiam repudiandae voluptatem.</p>
+		                    </div>    
+		                </div>
+					</div>
+		  		<!-- Controls -->
+		  			<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+		    			<span class="glyphicon glyphicon-chevron-left"></span>
+		  			</a>
+		 			<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+		    			<span class="glyphicon glyphicon-chevron-right"></span>
+		  			</a>
+				</div>				
+			</div>
+		</div>		        
+	</article>
+	<div id="maintop">
+		<div class="btn-next-up">
+			<a href="#header-back" style="text-decoration: none;"><i class="fa fa-angle-double-up"></i></a>
+		</div>	
+	</div>	
+	</div>	
+	<!-- Footer -->	
+	<footer id="footer-main">
+		<div class="container">
+			<div class="row">
+				<div class="logo-footer">
+					<img src="image/fidez-sprite(b-w).png" title="Лого фирмы Fidez" alt="logo1part" class="fidez-sprite">			
+				</div>									
+		<h2><span class="title uniq">Наша Студия</span></h2>								
+		<p style="padding-bottom: 10px; margin: 0;">Площадь Горького 8, офис 5</p>
+		<p class="adress-phones" style="padding-bottom: 10px; margin: 0;">
+			<i class="fa fa-phone"></i>
+			(098)589-48-83											
+			<i class="fa fa-phone"></i>
+			(099)366-26-92
+		</p>
+		<p style="padding-bottom: 10px; margin: 0;">
+			<i class="fa fa-envelope-o"></i>
+			fidez@ukr.net
+		</p>
+		<p style="padding-bottom: 10px; margin: 0;">Пн-Пт с 9:00 до 18:00</p>
+			<div class="copyright span12">
+				<span class="siteName">Fidez</span>
+				<span class="copy">©</span>
+				<span class="year">2015</span>	
+			</div>	
+			</div>
+		</div>		
+	</footer>
+	<!-- Правый sidebar-->
+	<aside id="fixed-sidebar-right">	
+		<div class="moduletable login">
+			<i class="fa fa-user"></i>
+			<h3><span class="title-sidebar">Авторизация или регистрация</span></h3>
+			<form action="" method="post" id="login-form" class="form-inline">
+				<div class="mod-login_userdata">
+					<div id="form-login-username" class="control-group">
+						<div class="controls">
+							<div class="input-user">
+								<span class="add-on">
+									<span class="fa fa-user hasTooltip" title="" data-original-title="Username">
+									</span>
+								<label for="modlgn-username" class="element-invisible">Имя пользователя</label>
+								</span>
+								<input id="modlgn-username" type="text" name="username" class="input-small" tabindex="0" size="18" placeholder="Имя пользователя" required>
+							</div>
+						</div>
+					</div>
+					<div id="form-login-password" class="control-group">
+						<div class="controls">
+							<div class="input-user">
+								<span class="add-on">
+									<span class="fa fa-lock hasTooltip" title="" data-original-title="Password">
+									</span>
+								<label for="modlgn-passwd" class="element-invisible">Пароль</label>
+								</span>
+								<input id="modlgn-passwd" type="password" name="password" class="input-small" tabindex="0" size="18" placeholder="Пароль" required>
+							</div>
+						</div>
+					</div>
+					<div class="mod-login_submit">
+						<button type="submit" tabindex="3" name="Submit" class="btn btn-primary">Войти</button>
+						<a class="btn btn-primary register" href="">Регистрация</a>
+					</div>
+					<input type="hidden" name="option" value="com_users">
+					<input type="hidden" name="task" value="user.login">
+					<input type="hidden" name="return" value="aW5kZXgucGhwP0l0ZW1pZD0xMDE=">
+					<input type="hidden" name="396c40a136ec50aad076d02dfb9ef829" value="1">
+					<label for="mod-login_remember107" class="checkbox">
+						<span class="checkbox">
+							<input id="mod-login_remember107" class="mod-login_remember" type="checkbox" name="remember" value="yes">
+							<label class="checkbox_inner" for="mod-login_remember107"></label>
+						</span>
+						Запомнить пароль
+					</label>
+					<div class="reset_remind">
+						Забыли
+						<a href="" class="hasTooltip" data-original-title title>логин</a>
+						/
+						<a href="" class="hasTooltip" data-oroginal-title title>пароль</a>?
+					</div>
+				</div>
+			</form>			
+		</div>
+
+
+	</aside>
 </body>
 </html>
