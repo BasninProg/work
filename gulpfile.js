@@ -44,16 +44,15 @@ gulp.task('concatCSS', function () {
         }))
     .pipe(minifyCSS(''))
     .pipe(rename('main-style.min.css'))
-    .pipe(gulp.dest('./app/css'))
-    .pipe(connect.reload());
+    .pipe(gulp.dest('./app/css'));    
 });
 
 //Слежка
 gulp.task('watch', function () {
   gulp.watch(['./app/**/*.html'], ['html']);
-  gulp.watch(['./app/css/**/*.css'], ['concatCSS']);
+  gulp.watch(['./app/css/**/*.css'], ['css']);
   gulp.watch(['./app/js/**/*.js'], ['js']);  
 });
 
 //Задача по умолчанию
-gulp.task('default', ['connect', 'watch']);
+gulp.task('default', ['connect', 'concatCSS', 'watch']);

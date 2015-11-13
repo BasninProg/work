@@ -7,6 +7,7 @@
     "jquery-animateNumber": "~0.0.12",
     "Headhesive.js": "headhesive#~1.2.4",
     "css": "https://fonts.googleapis.com/css?family=Istok+Web",
-    "istokWeb": "https://google-fonts.azurewebsites.net/googleFonts/istokWeb?family=Istok+Web"
+    "istokWeb": "https://google-fonts.azurewebsites.net/googleFonts/istokWeb?family=Istok+Web",
+    "google-maps": "~3.1.0"
   }
 }

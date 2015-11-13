@@ -1,6 +1,6 @@
 jQuery.noConflict();
 jQuery(function() {
-    jQuery('.btn-next-up a, .btn-next a').click(function() {
+    jQuery('.btn-next-up a, .btn-next a, .btn-next-up-other a').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
             var target = jQuery(this.hash);
             target = target.length ? target : jQuery('[name=' + this.hash.slice(1) +']');
